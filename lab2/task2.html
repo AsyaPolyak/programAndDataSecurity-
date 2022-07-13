@@ -1,0 +1,37 @@
+<script>
+    function shifr (b) {
+    b.disabled = document.getElementById ('txt').readOnly = true;
+    var S = document.getElementById ('txt').value.split (''), N = [], K = [], G = [],R = []; 
+    for  (var H = Math.ceil (S.length / 15), j = S.length, lj = H * 15; j < lj; j++)
+    
+    S [j] = ' ';
+     
+    while (S.length) G [G.length] = S.splice (0, H);
+      for (var i = j = 0; j < 15; j++)
+        N [j] = j + 1; while (N.length) K [K.length] = N.splice ((Math.random () * N.length), 1);
+        
+        for (R [0] = []; i < H; R [i] = R [i].join (''), i++, R [i] = []) 
+        for (j = 0; j < 15; j++) {
+            R [i]  [j] = G  [K [j] - 1][i]; document.
+            getElementById ('key').value = K.join ('');
+        }
+        for (var i = 0; i < reverse.length; i+=5) {
+    arr.push(reverse.slice(i, i + 5));
+    
+}
+document.getElementById ('cod').value= R.join ('');
+console.log(cod.join(' '));
+}
+</script>
+<p><textarea class= "colortext" id="txt" rows="10" cols="70">Введіть ПІБ, ЩОБ ЗАШИФРУВАТИ</textarea>
+    <p><input class= "colortext" type="button" value="Зашифрувати!" onclick="shifr (this)">
+    <p><input class= "colortext" id="key" size="40" value="Тут числовий ключ" readonly>
+    <p><textarea class= "colortext" id="cod" rows="10" cols="70" readonly>Тут буде шифр</textarea>
+<style>
+    *{
+      background-color:#DCDCDC;}
+
+      .colortext {
+          background-color: #D3D3D3;
+     }
+    </style>
